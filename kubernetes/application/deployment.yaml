@@ -1,0 +1,17 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: project1-2rp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: project1-2rp
+  template:
+    metadata:
+      labels:
+        app: project1-2rp
+    spec:
+      containers:
+        - name: project1-2rp
+          image: alexandrejtavares/project1-2rp:latest

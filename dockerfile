@@ -7,4 +7,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
+ENV TWORPTEST=true100%
+
 CMD [ "python", "-u", "./main.py" ]
